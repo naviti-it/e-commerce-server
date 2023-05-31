@@ -34,7 +34,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         payment_method_types: ["card"],
         customer_email: email,
         mode: "payment",
-        success_url: process.env.CLIENT_URL + "/checkout/success",
+        success_url: process.env.CLIENT_URL + "checkout/success",
         cancel_url: process.env.CLIENT_URL,
         line_items: lineItems,
       });
